@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Thi Trắc Nghiệm</title>
+</head>
+<body>
+    <div id="info-section">
+        <h2>Thông Tin Cá Nhân</h2>
+        <label for="name">Họ và Tên:</label>
+        <input type="text" id="name">
+
+        <label for="dob">Ngày Tháng Năm Sinh:</label>
+        <input type="date" id="dob">
+
+        <label for="student-id">Mã Sinh Viên:</label>
+        <input type="text" id="student-id">
+
+        <label for="class">Lớp:</label>
+        <input type="text" id="class">
+
+        <button onclick="startQuiz()">Bắt Đầu Thi</button>
+    </div>
+
+    <div id="question-section" style="display: none;">
+        <h2 id="question"></h2>
+        <div id="choices"></div>
+        <button onclick="nextQuestion()">Tiếp Theo</button>
+        <button onclick="submitAnswers()">Nộp Bài</button>
+    </div>
+
+    <div id="result-section" style="display: none;">
+        <h2>Kết Quả Thi</h2>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
